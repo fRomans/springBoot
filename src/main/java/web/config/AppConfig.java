@@ -25,7 +25,7 @@ public class AppConfig {
 //    @Autowired
 //    private Environment env;           "${hibernate.dialect}"
     @Value("${db.driver}")
-    private String dbdriver;
+    private String  dbdriver;
 
     @Value("${db.url}")
     String dburl;
