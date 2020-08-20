@@ -30,7 +30,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     public void registerGlobalAuthentication(AuthenticationManagerBuilder auth) throws Exception {
          auth.userDetailsService((UserDetailsService) userRepo).passwordEncoder(delegatingPasswordEncoder());
-        System.out.println("вроде пашет");
    }
 
     @Bean
