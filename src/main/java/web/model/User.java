@@ -18,7 +18,7 @@ public class User implements UserDetails {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Integer id;
 
     @Column(name = "name")
     private String name;
@@ -48,11 +48,11 @@ public class User implements UserDetails {
         this.rolesfield = rolesfield;
     }
 
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
